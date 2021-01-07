@@ -6,3 +6,4 @@ RUN yum install -y nodejs
 RUN curl --silent --location https://dl.yarnpkg.com/rpm/yarn.repo | tee /etc/yum.repos.d/yarn.repo
 RUN rpm --import https://dl.yarnpkg.com/rpm/pubkey.gpg
 RUN yum install -y yarn
+RUN yum install -y sudo wget telnet openssh-server vim git ncurses-term
